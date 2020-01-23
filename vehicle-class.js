@@ -1,15 +1,16 @@
 'use strict';
 
 class Car {
-    constructor(name){
-        this.name = name
+    constructor(name,wheels){
+        this.name = name;
+        this.wheels = wheels;
     }
     drive(){
         return 'Moving Forward';
     }
 }
 
-class Vehicle extends Car {
+class Car extends Vehicle {
     stop(){
         return 'Stopping';
     }
@@ -18,7 +19,7 @@ class Vehicle extends Car {
     }
 }
 
-class Motorcycle extends Car{
+class Car extends Motorcycle{
     stop(){
         return 'Stopping';
     }
